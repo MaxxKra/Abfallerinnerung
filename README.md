@@ -50,6 +50,41 @@ Um dies zu ändern, kann man unter `/config/custom_components/waste_collection_s
 Ich habe meine Sensoren und Templates in jeweilige Ordner als einzelne Dateien gespeichert.  
 Wie man diese sogenannten `Sensor-Folder` und `Template-Folder` anlegt, habe ich in einem YouTube Video erklärt.
 
+- [https://www.youtube.com/embed/s3ozDPf48_0](https://youtu.be/s3ozDPf48_0)
+
+Alle nun folgenden Codes sind in der Struktur auf diese Variante des Sensor-Folders ausgerichtet.  
+Es ist aber eine Änderung auf Sensor-File mit einem geringen Aufwand möglich.
+
+### 2.1. Sensor Nächste Abholung
+
+Legen wir zunächst den Hauptsensor für die Müllabholung an.
+Dazu habe ich in meinem Sensor Ordner eine neue Datei angelegt.  
+Dies hat den Namen `Nächste Abholung.yaml`.  
+
+:exclamation: Umlaute und Leerzeichen sind im Dateinamen der einzelnen Files kein Problem :exclamation:
+
+Der in dieses File einzufügende Code sowie der Name ist ebenso [hier](/../main/sensor/M%C3%BCllabholung.yaml) zu finden.
+
+Kopiere diesen Code und füge ihn in das File `Nächste Abholung.yaml` ein
+
+```yaml
+platform: waste_collection_schedule
+name:  "Nächste Abholung"
+value_template: '{{value.types|join(", ")}}{% if value.daysTo == 0 %} Heute{% elif value.daysTo == 1 %} Morgen{% else %} in {{value.daysTo}} tagen{% endif %}'
 ```
-<iframe width="560" height="315" src="https://www.youtube.com/embed/s3ozDPf48_0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-```
+
+Danach wieder Home Assistant neu Starten.
+
+Nun kann in den Entwicklerwerkzeugen nachgesehen werden, wie die einzelnen Abholungen benannt sind.  
+Dazu in der Suchleiste `Nächste Abholung` eingeben.  
+Bei den Attributen sollten nun alle Abholtage mit den jeweiligen Namen angezeigt werden.
+
+![Screenshot_Nächste_Abholung](https://github.com/MaxxKra/Abfallerinnerung/assets/83531755/53b581f6-20f9-4465-ac99-69d0d22486aa)
+
+In meinem Fall sind die Abholungen wie folgt benannt:
+  - Altpapier
+  - Leichtverpackungen
+  - Bioabfall
+  - Restabfall
+
+__Notiere dir die Bezeichnungen aus deinem Kalender und tausche diese im weiteren Verlauf der Programmierung aus!__
