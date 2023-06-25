@@ -1,0 +1,139 @@
+type: picture-elements
+image: /local/Back_trans.png
+elements:
+  - type: custom:button-card
+    entity: sensor.mullabholung_text
+    show_icon: false
+    show_name: false
+    show_state: true
+    style:
+      top: 10%
+      left: 50%
+      width: 100%
+    styles:
+      state:
+        - font-size: 1.5vw
+        - font-family: Arial Rounded MT
+        - color: var(--primary-color)
+        - white-space: unset
+        - text-overflow: unset
+        - word-brak: break-word
+      card:
+        - background: transparent
+        - border: none
+  - type: image
+    entity: sensor.leichtverpackungen
+    image: /local/muell/Kunststoff.png
+    style:
+      pointer-events: none
+      left: 15%
+      top: 45%
+      width: 20%
+  - type: image
+    entity: sensor.altpapier
+    image: /local/muell/Papier.png
+    style:
+      pointer-events: none
+      left: 38%
+      top: 45%
+      width: 20%
+  - type: image
+    entity: sensor.bioabfall
+    image: /local/muell/Bio.png
+    style:
+      pointer-events: none
+      left: 61%
+      top: 45%
+      width: 20%
+  - type: image
+    entity: sensor.restabfall
+    image: /local/muell/Rest.png
+    style:
+      pointer-events: none
+      left: 84%
+      top: 45%
+      width: 20%
+  - type: custom:button-card
+    entity: sensor.leichtverpackungen
+    show_name: true
+    show_icon: false
+    show_state: true
+    style:
+      top: 85%
+      left: 15%
+      width: 25%
+    styles:
+      name:
+        - font-size: 1vw
+        - font-family: Arial Rounded MT
+        - color: var(--primary-color)
+      state:
+        - font-size: 1vw
+        - font-family: Arial Rounded MT
+        - padding-top: 0.3em
+      card:
+        - background-color: transparent
+        - border: none
+  - type: custom:button-card
+    entity: sensor.altpapier
+    show_name: true
+    show_icon: false
+    show_state: true
+    style:
+      top: 85%
+      left: 38%
+      width: 25%
+    styles:
+      name:
+        - font-size: 1vw
+        - font-family: Arial Rounded MT
+        - color: var(--primary-color)
+      state:
+        - font-size: 1vw
+        - font-family: Arial Rounded MT
+        - padding-top: 0.3em
+      card:
+        - background-color: transparent
+        - border: none
+  - type: custom:button-card
+    entity: sensor.bioabfall
+    show_name: true
+    show_icon: false
+    show_state: true
+    style:
+      top: 85%
+      left: 61%
+      width: 25%
+    styles:
+      name:
+        - font-size: 1vw
+        - font-family: Arial Rounded MT
+        - color: var(--primary-color)
+      state:
+        - font-size: 1vw
+        - font-family: Arial Rounded MT
+        - padding-top: 0.3em
+      card:
+        - background-color: transparent
+        - border: none
+  - type: custom:button-card
+    entity: sensor.restabfall
+    show_name: true
+    show_icon: false
+    show_state: true
+    style:
+      top: 85%
+      left: 84%
+      width: 25%
+    styles:
+      name:
+        - font-size: 1vw
+        - font-family: Arial Rounded MT
+        - color: var(--primary-color)
+      state:
+        - font-size: 1vw
+        - font-family: Arial Rounded MT
+        - padding-top: 0.3em
+      card:
+        - background-color: transparent
+        - border: none
