@@ -137,7 +137,7 @@ types:
 Somit habe ich nach dem Neustart von Home Assistant 4 neue Sensoren zum Auswerten.
   - `sensor.altpapier`
   - `sensor.bioabfall`
-  - `sensor.leichtverpackung`
+  - `sensor.leichtverpackungen`
   - `sensor.restabfall`
 
 ## 3. Templates
@@ -208,3 +208,7 @@ sensor:
     
     {%endif%}
 ```
+
+Jetzt wird uns bei `sensor.mullabholung_text` auch schon ein Text als Zustand angezeigt
+
+![Screenshot_mullabholung_text](https://github.com/MaxxKra/Abfallerinnerung/assets/83531755/84856c72-00a4-4456-b3ef-4f4578ce51ee)
