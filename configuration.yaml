@@ -1,3 +1,5 @@
+## Eintrag in die configuration.yaml
+```yaml
 #                 ##    ##  #######  ##    ## ######## ####  ######                     #
 #                 ##   ##  ##     ## ###   ## ##        ##  ##    ##                    #
 #                 ##  ##   ##     ## ####  ## ##        ##  ##                          #
@@ -33,3 +35,5 @@ waste_collection_schedule:
     - name: ics
       args:
         file: "www/muell/Abfallkalender.ics"
+´´´
+
