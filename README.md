@@ -2,7 +2,7 @@
 
 Hier zeige ich, wie ich meine Müllerinnerung mit PopUp umgesetzt habe.
 
-![Abfallerinnerung_Popup_1](https://github.com/MaxxKra/Abfallerinnerung/assets/83531755/1045ea22-d2ff-4d54-b24d-c35bbf979b64)
+![Abfallerinnerung_Popup](/../main/GIFs/Abfallerinnerung_Popup.gif)
 
 ## Verwendete HACS Integrationen
 
@@ -30,11 +30,17 @@ Nun also, zu Beginn, den Code für den Müllkalender in die configuration.yaml e
 ```yaml
 waste_collection_schedule:
   sources:
-    - name: Abfallkalender
+    - name: ics
       args:
         file: "www/muell/Abfallkalender.ics"
 ```
 
 Danach Home Assistant neu Starten und in den Entwicklerwerkzeugen kontrollieren ob der Kalender angezeigt wird
 
+## :bangbang: HINWEIS :bangbang:
+
+Eine Abholung am jeweiligen Tag wird standardmäßig nur bis 10:00 Uhr angezeigt.  
+Um dies zu ändern, kann man unter `/config/custom_components/waste_collection_schedule/__init__.py` die Zeit zum Anzeigen der Abholung, individuell anpassen.  
+ Allerdings ist bei einem Update der Integration auch die Zeit wieder zurückgestellt.
+ 
 ![Waste_Time_1](/../main/GIFs/Waste_Time_1.gif)
