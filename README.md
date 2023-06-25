@@ -44,3 +44,12 @@ Um dies zu ändern, kann man unter `/config/custom_components/waste_collection_s
  Allerdings ist bei einem Update der Integration auch die Zeit wieder zurückgestellt.
  
 ![Waste_Time_1](/../main/GIFs/Waste_Time_1.gif)
+
+## 2. Sensoren
+
+Ich habe meine Sensoren und Templates in jeweilige Ordner als einzelne Dateien gespeichert.  
+Wie man diese sogenannten `Sensor-Folder` und `Template-Folder` anlegt, habe ich in einem YouTube Video erklärt.
+
+```
+<iframe width="560" height="315" src="https://www.youtube.com/embed/s3ozDPf48_0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+```
