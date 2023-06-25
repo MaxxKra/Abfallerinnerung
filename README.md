@@ -238,3 +238,13 @@ Die verwendeten Bilder sind:
 Zu Finden für:
   - Österreich: [Bilder-AT](/../main/Bilder/AT)
   - Deutschland: [Bilder-DE](/../main/Bilder/DE)
+
+Bei Interesse an dieser Karte, speichere dir die Bilder unter `www/muell`, kopiere dir den Code und füge ihn als `Manuell` zu deinem Dashboard hinzu.
+
+Die beste Ansicht hatte ich mit der `Raster-Karte` mit zwei Spalten oder der `Layout-Karte` mit einer Größe von 50% der Bildbreite.
+Wenn die Schriften zu groß für die Karte sein sollte kann sie natürlich angepasst werden.
+
+### :bangbang: TIPP :bangbang:
+Die Schrift ist in `vw` angegeben.  
+VW bezieht sich auf die Bildschirmgröße und passt sich dadurch dem Browser-Fenster an.  
+Alternativ können natürlich auch `px` als Pixel oder `em` was 16px entspricht, verwendet werden.
