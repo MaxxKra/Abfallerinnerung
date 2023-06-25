@@ -19,7 +19,7 @@ sensor:
 #-----------------------------------------------------------
 
 - name: Müllabholung Heute
-  unique_id: muellabholung_heute
+  unique_id: mullabholung_heute
   icon: mdi:trash-can-outline
   state: >
     {% set ALTPAPIER = states.sensor.altpapier.state %}
@@ -64,7 +64,7 @@ sensor:
 # Müllabholung Text Template
 #-----------------------------------------------------------
 - name: Müllabholung Text
-  unique_id: muellabholung_text
+  unique_id: mullabholung_text
   icon: mdi:trash-can-outline
   state: >
     {% if states.calendar.ics.state == 'on' %}
