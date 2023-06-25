@@ -12,7 +12,6 @@
 #---------------------------------------------------------------------#
 #######################################################################
 
-
 platform: waste_collection_schedule
 name:  "Nächste Abholung"
 value_template: '{{value.types|join(", ")}}{% if value.daysTo == 0 %} Heute{% elif value.daysTo == 1 %} Morgen{% else %} in {{value.daysTo}} tagen{% endif %}'
