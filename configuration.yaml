@@ -13,9 +13,21 @@
 #########################################################################################
 
 #-----------------------------------------------------------  
-# Müll-Kalender
+# Inkludierte Dateien
 #-----------------------------------------------------------
 
+# Ordner Zugriffsberechtigungen Extern/Intern
+homeassistant:
+  allowlist_external_dirs:
+    - /config/sensor
+    - /config/template
+
+sensor: !include_dir_list sensor
+template: !include_dir_list template
+
+#-----------------------------------------------------------  
+# Müll-Kalender
+#-----------------------------------------------------------
 waste_collection_schedule:
   sources:
     - name: ics
