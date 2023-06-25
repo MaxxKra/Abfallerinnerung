@@ -4,6 +4,11 @@ Hier zeige ich, wie ich meine Müllerinnerung mit PopUp umgesetzt habe.
 
 ![Abfallerinnerung_Popup](/../main/GIFs/Abfallerinnerung_Popup.gif)
 
+
+[!["Buy Me A Coffee"](https://www.buymeacoffee.com/assets/img/custom_images/orange_img.png)](https://www.buymeacoffee.com/bastler)
+
+
+
 ## Verwendete HACS Integrationen
 
 ### Integrationen:
@@ -17,7 +22,6 @@ Hier zeige ich, wie ich meine Müllerinnerung mit PopUp umgesetzt habe.
 
 Diese Integrationen, insbesonders die "waste_collectopn_schedule" sind notwendig um die Erinnerung mittels Popup anzeigen zu lassen.
 Stelle sicher, dass alle installiert und funktionsfähig sind.
-
 
 ## 1. Abfallkalender einrichten
 
@@ -212,3 +216,12 @@ sensor:
 Jetzt wird uns bei `sensor.mullabholung_text` auch schon ein Text als Zustand angezeigt
 
 ![Screenshot_mullabholung_text](https://github.com/MaxxKra/Abfallerinnerung/assets/83531755/84856c72-00a4-4456-b3ef-4f4578ce51ee)
+
+
+## 4. Abfall-Karte
+
+![Screenshot_Abfallkarte_1](https://github.com/MaxxKra/Abfallerinnerung/assets/83531755/c129cf67-7758-42e1-94b4-6373cc2131ac)
+
+Als nächstes habe ich mir für eine Dashboard-Ansicht eine Karte gebastelt.  
+Diese Karte zeigt alle 4 Tonnen mit den jeweiligen Abholtagen und als Überschrift den Text aus dem `sensor.mullabholung_text`.  
+Aufgebaut ist diese Ansicht auf einer `Picture-Elements-Card` mit `custom:button-card`.
