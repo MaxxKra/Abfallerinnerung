@@ -36,3 +36,5 @@ waste_collection_schedule:
 ```
 
 Danach Home Assistant neu Starten und in den Entwicklerwerkzeugen kontrollieren ob der Kalender angezeigt wird
+
+![Waste_Time_1](/../main/GIFs/Waste_Time_1.gif)
