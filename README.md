@@ -220,8 +220,21 @@ Jetzt wird uns bei `sensor.mullabholung_text` auch schon ein Text als Zustand an
 
 ## 4. Abfall-Karte
 
-![Screenshot_Abfallkarte_1](https://github.com/MaxxKra/Abfallerinnerung/assets/83531755/c129cf67-7758-42e1-94b4-6373cc2131ac)
-
 Als nächstes habe ich mir für eine Dashboard-Ansicht eine Karte gebastelt.  
 Diese Karte zeigt alle 4 Tonnen mit den jeweiligen Abholtagen und als Überschrift den Text aus dem `sensor.mullabholung_text`.  
 Aufgebaut ist diese Ansicht auf einer `Picture-Elements-Card` mit `custom:button-card`.
+
+![Screenshot_Abfallkarte_1](https://github.com/MaxxKra/Abfallerinnerung/assets/83531755/c129cf67-7758-42e1-94b4-6373cc2131ac)
+
+Den Code für diese Karte findest du [hier!](/../main/Abfallkarte.yaml)  
+
+Die verwendeten Bilder sind:
+  - `Back_trans.png`
+  - `Papier.png`
+  - `Bio.png`
+  - `Rest.png`
+  - `Kunststoff.png`
+
+Zu Finden für:
+  - Österreich: [Bilder-AT](/../main/Bilder/AT)
+  - Deutschland: [Bilder-DE](/../main/Bilder/DE)
