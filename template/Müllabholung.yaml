@@ -1,0 +1,74 @@
+#       ######## ######## ##     ## ########  ##          ###    ######## ########      #
+#          ##    ##       ###   ### ##     ## ##         ## ##      ##    ##            #
+#          ##    ##       #### #### ##     ## ##        ##   ##     ##    ##            #
+#          ##    ######   ## ### ## ########  ##       ##     ##    ##    ######        #
+#          ##    ##       ##     ## ##        ##       #########    ##    ##            #
+#          ##    ##       ##     ## ##        ##       ##     ##    ##    ##            #
+#          ##    ######## ##     ## ##        ######## ##     ##    ##    ########      # 
+
+#########################################################################################
+#---------------------------------------------------------------------------------------#
+##------------------------------ Müllabholung Heute -----------------------------------##
+#---------------------------------------------------------------------------------------#
+#########################################################################################
+
+sensor:
+
+#-----------------------------------------------------------  
+# Müllabholung Heute
+#-----------------------------------------------------------
+
+- name: Müllabholung Heute
+  unique_id: muellabholung_heute
+  icon: mdi:trash-can-outline
+  state: >
+    {% set ALTPAPIER = states.sensor.altpapier.state %}
+    {% set LEICHTVERPACKUNG = states.sensor.leichtverpackungen.state %}
+    {% set RESTABFALL = states.sensor.restabfall.state %}
+    {% set BIOABFALL = states.sensor.bioabfall.state %}
+    {% if ALTPAPIER == "Heute" and LEICHTVERPACKUNG == "Heute" and RESTABFALL == "Heute" and BIOABFALL == "Heute" %}
+    die Altpapier, Leichtverpackung, Restabfall und Bioabfall
+    {% elif LEICHTVERPACKUNG == "Heute" and RESTABFALL == "Heute" and BIOABFALL == "Heute" %} 
+    die Leichtverpackung, Restabfall und Bioabfall
+    {% elif ALTPAPIER == "Heute" and RESTABFALL == "Heute" and BIOABFALL == "Heute" %}
+    die Altpapier, Restabfall und Bioabfall
+    {% elif ALTPAPIER == "Heute" and LEICHTVERPACKUNG == "Heute" and BIOABFALL == "Heute" %}
+    die Altpapier, Leichtverpackung und Bioabfall
+    {% elif ALTPAPIER == "Heute" and LEICHTVERPACKUNG == "Heute" and RESTABFALL == "Heute" %}
+    die Altpapier, Leichtverpackung und Restabfall
+    {% elif ALTPAPIER == "Heute" and LEICHTVERPACKUNG == "Heute" %}
+    die Altpapier und Leichtverpackung
+    {% elif ALTPAPIER == "Heute" and RESTABFALL == "Heute" %}
+    die Altpapier und Restabfall
+    {% elif ALTPAPIER == "Heute" and BIOABFALL == "Heute" %}
+    die Altpapier und Bioabfall
+    {% elif LEICHTVERPACKUNG == "Heute" and RESTABFALL == "Heute" %}
+    die Leichtverpackung und Restabfall
+    {% elif LEICHTVERPACKUNG == "Heute" and BIOABFALL == "Heute" %}
+    die Leichtverpackung und Bioabfall
+    {% elif RESTABFALL == "Heute" and BIOABFALL == "Heute" %}
+    die Restabfall und Bioabfall
+    {% elif ALTPAPIER == "Heute" %}
+    die Altpapier
+    {% elif LEICHTVERPACKUNG == "Heute" %}
+    die Leichtverpackung
+    {% elif RESTABFALL == "Heute" %}
+    die Restabfall
+    {% elif BIOABFALL == "Heute" %}
+    die Bioabfall
+    {% else %}
+    keine
+    {%endif%}
+
+#-----------------------------------------------------------  
+# Müllabholung Text Template
+#-----------------------------------------------------------
+- name: Müllabholung Text
+  unique_id: muellabholung_text
+  icon: mdi:trash-can-outline
+  state: >
+    {% if states.calendar.ics.state == 'on' %}
+    Du musst heute {{ states.sensor.mullabholung_heute.state }} Tonne rausstellen!
+    {% else %}
+    
+    {%endif%}
