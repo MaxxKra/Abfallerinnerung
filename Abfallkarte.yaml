@@ -1,6 +1,20 @@
+   ###    ########  ########    ###    ##       ##       ##    ##    ###    ########  ######## ######## 
+  ## ##   ##     ## ##         ## ##   ##       ##       ##   ##    ## ##   ##     ##    ##    ##       
+ ##   ##  ##     ## ##        ##   ##  ##       ##       ##  ##    ##   ##  ##     ##    ##    ##       
+##     ## ########  ######   ##     ## ##       ##       #####    ##     ## ########     ##    ######   
+######### ##     ## ##       ######### ##       ##       ##  ##   ######### ##   ##      ##    ##       
+##     ## ##     ## ##       ##     ## ##       ##       ##   ##  ##     ## ##    ##     ##    ##       
+##     ## ########  ##       ##     ## ######## ######## ##    ## ##     ## ##     ##    ##    ######## 
+
+#----------------------------------------------------------------
+#  Beginn Picture-Elements
+#----------------------------------------------------------------
 type: picture-elements
 image: /local/Back_trans.png
 elements:
+#----------------------------------------------------------------
+#  Überschrift mit Custom-Button-Card
+#----------------------------------------------------------------
   - type: custom:button-card
     entity: sensor.mullabholung_text
     show_icon: false
@@ -21,6 +35,9 @@ elements:
       card:
         - background: transparent
         - border: none
+#----------------------------------------------------------------
+#  Bilder der Tonnen
+#----------------------------------------------------------------
   - type: image
     entity: sensor.leichtverpackungen
     image: /local/muell/Kunststoff.png
@@ -53,6 +70,9 @@ elements:
       left: 84%
       top: 45%
       width: 20%
+#----------------------------------------------------------------
+#  1. Sensor mit Custom-Button-Card
+#----------------------------------------------------------------
   - type: custom:button-card
     entity: sensor.leichtverpackungen
     show_name: true
@@ -74,6 +94,9 @@ elements:
       card:
         - background-color: transparent
         - border: none
+#----------------------------------------------------------------
+#  2. Sensor mit Custom-Button-Card
+#----------------------------------------------------------------
   - type: custom:button-card
     entity: sensor.altpapier
     show_name: true
@@ -95,6 +118,9 @@ elements:
       card:
         - background-color: transparent
         - border: none
+#----------------------------------------------------------------
+#  3. Sensor mit Custom-Button-Card
+#----------------------------------------------------------------
   - type: custom:button-card
     entity: sensor.bioabfall
     show_name: true
@@ -116,6 +142,9 @@ elements:
       card:
         - background-color: transparent
         - border: none
+#----------------------------------------------------------------
+#  4. Sensor mit Custom-Button-Card
+#----------------------------------------------------------------
   - type: custom:button-card
     entity: sensor.restabfall
     show_name: true
