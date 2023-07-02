@@ -263,9 +263,16 @@ Dieser Helfer hat folgende Attribute:
 
 
 Nachdem das erledigt ist, kann die eigentliche PopUp-Karte programmiert werden.  
-Dazu folgenden Code als neue Karte zu dem Dashboard hinzufügen, auf welchem die Popup-Nachricht angezeigt werden soll.  
+Dazu einfach den Code für die Popup-Karte kopieren.
+
+Den Code für die Popup-Karte findest du [hier!](/../main/PopUp/popup_muellerinnerung.yaml)
+
+![Popup-Karte-kopieren](/../main/GIFs/Popup-Karte-kopieren.gif)
+
+Nun den kopierten Code als neue Karte zu dem Dashboard hinzufügen, auf welchem die Popup-Nachricht angezeigt werden soll.  
 In meinem Fall handelt es sich um mein Hauptdashboard, welches mittels "Layout-Card" programmiert wurde. Aus diesem Grund habe ich für das Popup eine eigene "Area" im Layout geschaffen.  
 
 Es kann natürlich auch als eigene Karte im Raster, als Zeile oder Spalte im horizontalen oder vertikalen Stapel, usw. eingefügt werden.
+Auch hier kann natürlich die Schriftgröße wie zuvor bei der Abfallerinnerung angepasst werden.
 
-Den Code für die Popup-Karte findest du [hier!](/../main/PopUp/popup_muellerinnerung.yaml)
+![Popup-Karte-import](/../main/GIFs/Popup-Karte-import.gif)
