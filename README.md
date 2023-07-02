@@ -251,3 +251,21 @@ Alternativ können natürlich auch `px` als Pixel oder `em` was 16px entspricht,
 
 
 ## 5. Erinnerung - Popup - Karte
+
+Zunächst habe ich für die Auslösung des Popup´s einen Helfer erstellt.  
+Dieser Helfer hat folgende Attribute:
+  - Type: Taste
+  - Name: "Müll Erinnerung"
+  - Symbol: mdi:delete-circle-outline
+  - Entity_ID: input_button.mull_erinnerung
+
+![Helfer_Abfallerinnerung](https://github.com/MaxxKra/Abfallerinnerung/assets/83531755/b4575f20-da54-46e5-b279-caf75048b113)
+
+
+Nachdem das erledigt ist, kann die eigentliche PopUp-Karte programmiert werden.  
+Dazu folgenden Code als neue Karte zu dem Dashboard hinzufügen, auf welchem die Popup-Nachricht angezeigt werden soll.  
+In meinem Fall handelt es sich um mein Hauptdashboard, welches mittels "Layout-Card" programmiert wurde. Aus diesem Grund habe ich für das Popup eine eigene "Area" im Layout geschaffen.  
+
+Es kann natürlich auch als eigene Karte im Raster, als Zeile oder Spalte im horizontalen oder vertikalen Stapel, usw. eingefügt werden.
+
+Den Code für die Popup-Karte findest du [hier!](/../main/PopUp/popup_muellerinnerung.yaml)
