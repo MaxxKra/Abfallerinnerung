@@ -335,7 +335,7 @@ Mit diesem Helfer kann ein Zeitplan für jeden Tag der Woche zu jeder halben Stu
 In meinem Fall wird die Entität `schedule.abfallerinnerung` von Montag bis Freitag um 04:00 Uhr aktiv also `on` .  
 Dieser Status bzw. Zustand kann nun als Auslöser für eine Automatisierung herangezogen werden, welche den Helfer-Taster `input_button.mull_erinnerung` betätigt.
 
-![Screenshot_Zeitplan]([/../main/GIFs/Screenshot_Zeitplan.png)
+![Screenshot_Zeitplan](/../main/GIFs/Screenshot_Zeitplan.png)
 
 So wird mittels dieser Automatisierung die Taste `input_button.mull_erinnerung` betätigt, wenn der Zeitplan `schedule.abfallerinnerung` von `off` zu `on` wechselt.  
 Natürlich kann diese Automatisierung variiert werden. 
