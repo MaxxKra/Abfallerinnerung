@@ -294,7 +294,9 @@ Verwendet werden für das Popup folgende Bilder:
   | Keine.png | Keine Abholung |
   | bg_muell_trans.png | Hintergrundbild transparent |
   | 1x1_transparent.png | 1x1 Pixel transparent |
-  
+
+Mit diesen Bildern sind alle Variationen der Abholung bedacht, egal ob nur eine Tonne oder mehrere an einem Tag abgeholt werden.
+
 ### 5.3. Popup Karte erstellen
 
 Nachdem das erledigt ist, kann die eigentliche PopUp-Karte programmiert werden.  
@@ -312,3 +314,11 @@ Auch hier kann natürlich die Schriftgröße wie zuvor bei der Abfallerinnerung 
 
 ![Popup-Karte-import](/../main/GIFs/Popup-Karte-import.gif)
 
+## 6. Automatisierung
+
+Um die Erinnerung, also das Popup automatisch anzuzeigen, habe ich eine Automatisierung erstellt.
+
+Dafür gibt es auch wieder mehrere Möglichkeiten.
+Wenn noch kein regelmäßiger Auslöser in Home Assistant vorhanden ist, kann ein Zeitplan erstellt werden.
+
+Dazu einfach einen Helfer anlegen
