@@ -1,6 +1,6 @@
 # Abfallerinnerung
 
-Hier zeige ich, wie ich meine Müllerinnerung mit PopUp umgesetzt habe.
+Hier zeige ich, wie ich meine Müllerinnerung mit PopUp umgesetzt habe, so dass automatisch jeden Tag der Müllkalender abgefragt und wenn eine Abholung ansteht, das Popup am vorgesehenen Dashboard angezeigt wird.
 
 ![Abfallerinnerung_Popup](/../main/GIFs/Abfallerinnerung_Popup.gif)
 
