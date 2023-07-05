@@ -252,6 +252,8 @@ Alternativ können natürlich auch `px` als Pixel oder `em` was 16px entspricht,
 
 ## 5. Erinnerung - Popup - Karte
 
+### 5.1. Helfer anlegen
+
 Zunächst habe ich für die Auslösung des Popup´s einen Helfer erstellt.  
 Dieser Helfer hat folgende Attribute:
   - Type: Taste
@@ -261,6 +263,39 @@ Dieser Helfer hat folgende Attribute:
 
 ![Helfer_Abfallerinnerung](https://github.com/MaxxKra/Abfallerinnerung/assets/83531755/b4575f20-da54-46e5-b279-caf75048b113)
 
+### 5.2. Bilder speichern
+
+Nun sollten die notwendigen Bilder in den `www/muell` Ordner gespeichert werden.  
+Auch wie zuvor sind die Bilder getrennt für AT und DE zum Download verfügbar.
+
+Zu Finden für:
+  - Österreich: [Bilder-AT](/../main/Bilder/AT)
+  - Deutschland: [Bilder-DE](/../main/Bilder/DE)
+
+Verwendet werden für das Popup folgende Bilder:
+
+  | Bild Name | Bild Beschreibung |
+  | --- | --- |
+  | AP.png | Altpapier |
+  | AP_BI.png | Altpapier und Bioabfall |
+  | AP_LE.png | Altpapier und Leichtverpackung |
+  | AP_LE_BI.png | Altpapier, Leichtverpackung und Bioabfall|
+  | AP_LE_RE.png | Altpapier, Leichtverpackung und Restabfall |
+  | AP_LE_RE_BI.png | Altpapier, Leichtverpackung, Restabfall und Bioabfall |
+  | AP_RE.png | Altpapier und Restabfall |
+  | AP_RE_BI | Altpapier, Restabfall und Bioabfall |
+  | BI.png | Bioabfall |
+  | LE.png | Leichtverpackung |
+  | LE_BI.png | Leichtverpackung und Bioabfall |
+  | LE_RE.png | Leichtverpackung und Restabfall |
+  | LE_RE_BI.png | Leichtverpackung, Restabfall und Bioabfall |
+  | RE.png | Restabfall |
+  | RE_BI.png | Restabfall und Bioabfall |
+  | Keine.png | Keine Abholung |
+  | bg_muell_trans.png | Hintergrundbild transparent |
+  | 1x1_transparent.png | 1x1 Pixel transparent |
+  
+### 5.3. Popup Karte erstellen
 
 Nachdem das erledigt ist, kann die eigentliche PopUp-Karte programmiert werden.  
 Dazu einfach den Code für die Popup-Karte kopieren.
@@ -276,3 +311,4 @@ Es kann natürlich auch als eigene Karte im Raster, als Zeile oder Spalte im hor
 Auch hier kann natürlich die Schriftgröße wie zuvor bei der Abfallerinnerung angepasst werden.
 
 ![Popup-Karte-import](/../main/GIFs/Popup-Karte-import.gif)
+
