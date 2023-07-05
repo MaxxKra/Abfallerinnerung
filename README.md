@@ -41,7 +41,7 @@ waste_collection_schedule:
 
 Danach Home Assistant neu Starten und in den Entwicklerwerkzeugen kontrollieren ob der Kalender angezeigt wird
 
-![Screenshot_ics](https://github.com/MaxxKra/Abfallerinnerung/assets/83531755/6959075f-d531-4581-a2be-8a67d0063a62)
+![Screenshot_ics](/../main/GIFs/Screenshot_ics.png)
 
 
 ## :bangbang: HINWEIS :bangbang:
@@ -88,7 +88,7 @@ Nun muss zunächst nachgesehen werden, wie die einzelnen Abholungen benannt sind
 Dazu unter `Entwicklerwerkzeuge / ZUSTÄNDE` bei `Entität` in die Suchleiste  `Nächste Abholung` eingeben.  
 Bei den Attributen sollten nun alle Abholtage mit den jeweiligen Namen angezeigt werden.
 
-![Screenshot_Nächste_Abholung](https://github.com/MaxxKra/Abfallerinnerung/assets/83531755/53b581f6-20f9-4465-ac99-69d0d22486aa)
+![Screenshot_Nächste_Abholung](/../main/GIFs/Screenshot_N%C3%A4chste_Abholung.png)
 
 In meinem Fall sind die Abholungen wie folgt benannt:
   - Altpapier
@@ -215,7 +215,7 @@ sensor:
 
 Jetzt wird uns bei `sensor.mullabholung_text` auch schon ein Text als Zustand angezeigt
 
-![Screenshot_mullabholung_text](https://github.com/MaxxKra/Abfallerinnerung/assets/83531755/84856c72-00a4-4456-b3ef-4f4578ce51ee)
+![Screenshot_mullabholung_text](/../main/GIFs/Screenshot_mullabholung_text.png)
 
 
 ## 4. Abfall-Karte
@@ -224,7 +224,7 @@ Als nächstes habe ich mir für eine Dashboard-Ansicht eine Karte gebastelt.
 Diese Karte zeigt alle 4 Tonnen mit den jeweiligen Abholtagen und als Überschrift den Text aus dem `sensor.mullabholung_text`.  
 Aufgebaut ist diese Ansicht auf einer `Picture-Elements-Card` mit `custom:button-card`.
 
-![Screenshot_Abfallkarte_1](https://github.com/MaxxKra/Abfallerinnerung/assets/83531755/c129cf67-7758-42e1-94b4-6373cc2131ac)
+![Screenshot_Abfallkarte_1](/../main/GIFs/Screenshot_Abfallkarte_1.png)
 
 Den Code für diese Karte findest du [hier!](/../main/Abfallkarte.yaml)  
 
@@ -261,7 +261,7 @@ Dieser Helfer hat folgende Attribute:
   - Symbol: mdi:delete-circle-outline
   - Entity_ID: input_button.mull_erinnerung
 
-![Helfer_Abfallerinnerung](https://github.com/MaxxKra/Abfallerinnerung/assets/83531755/b4575f20-da54-46e5-b279-caf75048b113)
+![Helfer_Abfallerinnerung](/../main/GIFs/Helfer_Abfallerinnerung.gif)
 
 ### 5.2. Bilder speichern
 
@@ -335,7 +335,7 @@ Mit diesem Helfer kann ein Zeitplan für jeden Tag der Woche zu jeder halben Stu
 In meinem Fall wird die Entität `schedule.abfallerinnerung` von Montag bis Freitag um 04:00 Uhr aktiv also `on` .  
 Dieser Status bzw. Zustand kann nun als Auslöser für eine Automatisierung herangezogen werden, welche den Helfer-Taster `input_button.mull_erinnerung` betätigt.
 
-![grafik](https://github.com/MaxxKra/Abfallerinnerung/assets/83531755/9adcb014-32af-4dab-8d24-d7ba928ac09e)
+![Screenshot_Zeitplan]([/../main/GIFs/Screenshot_Zeitplan.png)
 
 So wird mittels dieser Automatisierung die Taste `input_button.mull_erinnerung` betätigt, wenn der Zeitplan `schedule.abfallerinnerung` von `off` zu `on` wechselt.  
 Natürlich kann diese Automatisierung variiert werden. 
