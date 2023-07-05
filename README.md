@@ -322,3 +322,20 @@ Dafür gibt es auch wieder mehrere Möglichkeiten.
 Wenn noch kein regelmäßiger Auslöser in Home Assistant vorhanden ist, kann ein Zeitplan erstellt werden.
 
 Dazu einfach einen Helfer anlegen
+
+![Zeitplan_Abfallerinnerung](/../main/GIFs/Zeitplan_Abfallerinnerung.gif)
+
+Dieser Helfer hat folgende Attribute:
+  - Type: Zeitplan
+  - Name: "Abfallerinnerung"
+  - Symbol: mdi:home-clock-outline
+  - Entity_ID: schedule.abfallerinnerung
+
+Mit diesem Helfer kann ein Zeitplan für jeden Tag der Woche zu jeder halben Stunde erstellt werden.  
+In meinem Fall wird die Entität `schedule.abfallerinnerung` von Montag bis Freitag um 04:00 Uhr aktiv also `on` .  
+Dieser Status bzw. Zustand kann nun als Auslöser für eine Automatisierung herangezogen werden, welche den Helfer-Taster `input_button.mull_erinnerung` betätigt.
+
+![grafik](https://github.com/MaxxKra/Abfallerinnerung/assets/83531755/9adcb014-32af-4dab-8d24-d7ba928ac09e)
+
+So wird mittels dieser Automatisierung die Taste `input_button.mull_erinnerung` betätigt, wenn der Zeitplan `schedule.abfallerinnerung` von `off` zu `on` wechselt.  
+Natürlich kann diese Automatisierung variiert werden. 
