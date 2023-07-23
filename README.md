@@ -314,6 +314,11 @@ Auch hier kann natürlich die Schriftgröße wie zuvor bei der Abfallerinnerung 
 
 ![Popup-Karte-import](/../main/GIFs/Popup-Karte-import.gif)
 
+### :bangbang: MERKE :bangbang:
+Ein Aufruf dieser Popup-Kaste erfolgt über den More-Info Dialog.
+Das bedeutet, dass der Helfer-Button eine Automatisierung auslösen muss, welche den More-Info Dialog am Dashboard öffnet.  
+Wenn allerdings im Browser mehrere Fenster geöffnet sind, wird auch der More-Info Dialog auf allen Fenstern geöffnet!
+
 ## 6. Automatisierung
 
 Um die Erinnerung, also das Popup automatisch anzuzeigen, habe ich eine Automatisierung erstellt.
