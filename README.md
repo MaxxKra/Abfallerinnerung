@@ -378,7 +378,7 @@ Natürlich kann diese Automatisierung variiert werden.
 
 ## 7.Kontakt
 
-Bei Fragen oder Anregungen nehmt bitte Kontakt mit mir auf:
-Email: youtube@smarthomebastler.at
-Discord: https://discord.gg/Wt42rpwQye
+Bei Fragen oder Anregungen nehmt bitte Kontakt mit mir auf:  
+Email: youtube@smarthomebastler.at  
+Discord: https://discord.gg/Wt42rpwQye  
 Website: https://smarthomebastler.at
