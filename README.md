@@ -374,4 +374,11 @@ Dieser Status bzw. Zustand kann nun als Auslöser für eine Automatisierung hera
 ![Screenshot_Zeitplan](/../main/GIFs/Screenshot_Zeitplan.png)
 
 So wird mittels dieser Automatisierung die Taste `input_button.mull_erinnerung` betätigt, wenn der Zeitplan `schedule.abfallerinnerung` von `off` zu `on` wechselt.  
-Natürlich kann diese Automatisierung variiert werden. 
+Natürlich kann diese Automatisierung variiert werden.  
+
+## 7.Kontakt
+
+Bei Fragen oder Anregungen nehmt bitte Kontakt mit mir auf:
+Email: youtube@smarthomebastler.at
+Discord: https://discord.gg/Wt42rpwQye
+Website: https://smarthomebastler.at
