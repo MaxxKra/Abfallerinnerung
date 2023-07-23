@@ -10,7 +10,7 @@
 #  Beginn Picture-Elements
 #----------------------------------------------------------------
 type: picture-elements
-image: /local/Back_trans.png
+image: /local/muell/Back_trans.png
 elements:
 #----------------------------------------------------------------
 #  Überschrift mit Custom-Button-Card
