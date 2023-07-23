@@ -269,6 +269,29 @@ Dafür ist folgendes notwendig bzw. von mir so angelegt worden:
   - Entity_ID: input_button.mull_erinnerung
   - Browser_ID: die ID deines Browser aus Browser-Mod
 
+![Automatisierung_Button](/../main/GIFs/Screenshot_Button_M%C3%BCllerinnerung.png)
+
+
+Hier ist der Code der gesamten Automatisierung zum Kopieren.  
+Es muss nur die `browser_id` geändert werden.  
+
+```yaml
+alias: Button Müllerinnerung
+description: ""
+trigger:
+  - platform: state
+    entity_id:
+      - input_button.mull_erinnerung
+condition: []
+action:
+  - service: browser_mod.more_info
+    data:
+      entity: input_button.mull_erinnerung
+      large: false
+      ignore_popup_card: false
+      browser_id: SHB-PC_Vivaldi
+mode: single
+```
 
 
 ### 5.2. Bilder speichern
@@ -324,8 +347,8 @@ Auch hier kann natürlich die Schriftgröße wie zuvor bei der Abfallerinnerung 
 
 ### :bangbang: MERKE :bangbang:
 Ein Aufruf dieser Popup-Karte erfolgt über den More-Info Dialog.
-Das bedeutet, dass der Helfer-Button eine Automatisierung auslösen muss, welche den More-Info Dialog am Dashboard öffnet.  
-Wenn allerdings im Browser mehrere Fenster geöffnet sind, wird auch der More-Info Dialog auf allen Fenstern geöffnet!
+Das bedeutet, dass der Helfer-Button die zuvor eingerichtete Automatisierung auslösen muss, welche den More-Info Dialog am Dashboard öffnet.  
+Wenn allerdings im Browser mehrere Fenster von Homeassistant geöffnet sind, wird auch der More-Info Dialog auf allen Fenstern geöffnet!
 
 ## 6. Automatisierung
 
