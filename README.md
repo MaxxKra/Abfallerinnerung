@@ -263,6 +263,14 @@ Dieser Helfer hat folgende Attribute:
 
 ![Helfer_Abfallerinnerung](/../main/GIFs/Helfer_Abfallerinnerung.gif)
 
+Um mit diesem Helfer den notwendigen More-Info Dialog für das Popup zu öffnen, ist eine Automatisierung notwendig.  
+Dafür ist folgendes notwendig bzw. von mir so angelegt worden:
+  - Name: "Popup Müllerinnerung Button
+  - Entity_ID: input_button.mull_erinnerung
+  - Browser_ID: die ID deines Browser aus Browser-Mod
+
+
+
 ### 5.2. Bilder speichern
 
 Nun sollten die notwendigen Bilder in den `www/muell` Ordner gespeichert werden.  
@@ -315,7 +323,7 @@ Auch hier kann natürlich die Schriftgröße wie zuvor bei der Abfallerinnerung 
 ![Popup-Karte-import](/../main/GIFs/Popup-Karte-import.gif)
 
 ### :bangbang: MERKE :bangbang:
-Ein Aufruf dieser Popup-Kaste erfolgt über den More-Info Dialog.
+Ein Aufruf dieser Popup-Karte erfolgt über den More-Info Dialog.
 Das bedeutet, dass der Helfer-Button eine Automatisierung auslösen muss, welche den More-Info Dialog am Dashboard öffnet.  
 Wenn allerdings im Browser mehrere Fenster geöffnet sind, wird auch der More-Info Dialog auf allen Fenstern geöffnet!
 
