@@ -67,7 +67,7 @@ sensor:
   unique_id: mullabholung_text
   icon: mdi:trash-can-outline
   state: >
-    {% if states.calendar.ics.state == 'on' %}
+    {% if states.sensor.mullabholung_heute.state != 'keine' %}
     Du musst heute {{ states.sensor.mullabholung_heute.state }} Tonne rausstellen!
     {% else %}
     
