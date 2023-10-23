@@ -7,6 +7,8 @@ Hier zeige ich, wie ich meine Müllerinnerung mit PopUp umgesetzt habe, so dass 
 
 [!["Buy Me A Coffee"](https://www.buymeacoffee.com/assets/img/custom_images/orange_img.png)](https://www.buymeacoffee.com/bastler)
 
+[![paypal](https://www.paypalobjects.com/en_US/i/btn/btn_donateCC_LG.gif)](https://www.paypal.me/kramlmaxx)
+
 
 
 ## Verwendete HACS Integrationen
