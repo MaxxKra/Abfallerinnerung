@@ -14,6 +14,6 @@
 
 platform: waste_collection_schedule
 name: "Leichtverpackungen"
-value_template: '{% if value.daysTo == 0 %} Heute{% elif value.daysTo == 1 %} Morgen{% else %} in {{value.daysTo}} tagen{% endif %}'
+value_template: '{% if value.daysTo == 0 %} Heute{% elif value.daysTo == 1 %} Morgen{% else %} in {{value.daysTo}} Tagen{% endif %}'
 types:
   - Leichtverpackungen
